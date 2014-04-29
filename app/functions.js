@@ -4,15 +4,22 @@ define(function() {
   return {
     argsAsArray : function(fn, arr) {
 
+    		// return fn.
+    		//research fn.apply
+    		return fn.apply(fn, arr);
 
     },
 
     speak : function(fn, obj) {
 
-
+    	return fn.apply(obj);
+    	//look up fn.call
+    	//difference app aplies arg as an array. call . . .
     },
 
     useArguments : function() {
+
+    	
 
 
     }
