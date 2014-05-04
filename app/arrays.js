@@ -92,23 +92,30 @@ define(function() {
     },
 
     count : function(arr, item) {
-           // var = aCount
-           // arr.sort();
-           // for (var i =0; i < arr.length; i++){
-           //  if (arr[i] !== item){
-           //      aCount.push(item);
-           //  }
-           // } 
-           // return aCount;
-
+        
+        var count = [];
+        for(i=0; i<arr.length; i++) {
+          if(arr[i]===item){
+            count.unshift(arr[i]);
+      }
+      }
+          return count.length;
     },
 
-    duplicates : function(arr) {
 
-    },
+
+    // duplicates : function(arr) {
+
+    // },
 
     square : function(arr) {
 
+      var square = [];
+        for (i=0; i<arr.length; i++){
+          square.push(arr[i] * arr[i]);
+
+        }
+           return square; 
 
     },
 
