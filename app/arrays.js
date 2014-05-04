@@ -41,10 +41,14 @@ define(function() {
     },
 
     removeWithoutCopy : function(arr, item) {
-        // return arr.splice (arr, item);
-        // return arr.push (item);
-        // return arr.push (item);
-
+        for (i=0; i < arr.length; i++){
+            if (arr[i] === item){
+                arr.splice(i, 1);
+                i = i - 1;
+                arr.length = arr.length - 1;
+            }
+        }
+            return arr;
     },
 
     append : function(arr, item) {

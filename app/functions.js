@@ -19,6 +19,11 @@ define(function() {
 
     useArguments : function() {
 
+        var ran = 0;
+        for (i = 0; i<arguments.length; i++){
+            ran += arguments[i];
+        };
+            return ran;
     	
 
 
